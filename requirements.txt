@@ -1,0 +1,3 @@
+pyvo == 1.4.2
+ipyaladin >= 0.2.5
+mocpy >= 0.13.0

@@ -1,0 +1,30 @@
+exclude: 'Past_Conferences_and_Schools/' # ignores the unmaintained notebooks
+
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0
+  hooks:
+    - id: detect-private-key
+      description: "Check accidental private keys in code"
+    - id: trailing-whitespace
+      exclude_types:
+        - "svg"
+      description: "Remove trailing whitespaces"
+- repo: https://github.com/Lucas-C/pre-commit-hooks-nodejs
+  rev: v1.1.2
+  hooks:
+  - id: markdown-toc
+    name: markdown-toc
+- repo: https://github.com/nbQA-dev/nbQA
+  rev: 1.7.0
+  hooks:
+    - id: nbqa-black
+      name: nbqa-black
+      description: "Run 'black' on a Jupyter Notebook"
+      language: python
+      require_serial: true
+    - id: nbqa-ruff
+      name: nbqa-ruff
+      description: "Run ruff on a Jupyter notebook"
+      fail_fast: true
+    - id: nbqa-isort
