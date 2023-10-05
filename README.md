@@ -6,8 +6,9 @@ Suggested workflows (provided as jupyter notebooks) to handle VizieR from python
 
 ## contributing
 
-We use pre-commits, don't forget to `pre-commit install` in you clone.
+We use pre-commits, don't forget to `pre-commit install` in your clone.
 
 ## TODO
 
-- [] CI
+- [ ] CI
+- [ ] description of notebooks content
